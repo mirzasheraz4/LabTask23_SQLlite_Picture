@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowImageActivity">
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:id="@+id/showImagebtn"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/button"
+        android:text="Show Image"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:onClick="getdata"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/showImagebtn"
+        android:id="@+id/imgRV"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>

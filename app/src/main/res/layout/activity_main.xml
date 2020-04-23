@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Image Name"
+        android:id="@+id/ImageNameET"
+        android:textColor="@color/colorPrimaryDark"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/alt_img"
+        android:layout_below="@+id/ImageNameET"
+        android:id="@+id/image"
+        android:onClick="chooseImage"/>
+    <Button
+    android:layout_width="250dp"
+    android:layout_height="60dp"
+    android:id="@+id/saveImagebtn"
+    android:layout_marginLeft="50dp"
+    android:layout_marginTop="4dp"
+    android:background="@drawable/button"
+    android:layout_below="@id/image"
+    android:text="Save Image"
+    android:layout_centerInParent="true"
+    android:textColor="@color/colorPrimary"
+    android:textSize="14sp"
+        android:onClick="storeImage"/>
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:id="@+id/showImagebtn"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/button"
+        android:layout_below="@id/saveImagebtn"
+        android:text="Move to Show Image Activity"
+        android:layout_centerInParent="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp" />
+
+
+
+
+</RelativeLayout>
